@@ -27,9 +27,8 @@ exports.methods = {
             region, api,
             ttl: @cacheTTL.long
             objectType: 'stats'
-            params: {summonerId, season: option.season}
+            params: {summonerId, season: options.season}
         }
 
-        @_riotRequestWithCache requestParams, cacheParams, {}
-
+        @_riotRequestWithCache requestParams, cacheParams
 }
