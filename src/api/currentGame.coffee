@@ -39,7 +39,7 @@ exports.methods = {
         cacheParams = {
             key: "#{api.fullname}-match-#{region}-#{summonerId}"
             region, api,
-            ttl: @cacheTTL.long
+            ttl: @cacheTTL.short
             objectType: 'current-game'
             params: {summonerId}
         }
