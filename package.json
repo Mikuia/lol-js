@@ -17,6 +17,7 @@
     }
   ],
   "scripts": {
+  	"postinstall": "npm run prepublish",
     "prepublish": "coffee -c -o lib src && npm run test",
     "test": "mocha && istanbul report"
   },
